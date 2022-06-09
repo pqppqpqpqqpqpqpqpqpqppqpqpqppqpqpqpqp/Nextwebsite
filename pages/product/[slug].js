@@ -2,7 +2,7 @@
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import mongoose from 'mongoose'
-import Product from '../../models/Product'
+import Product from '../../models/Product.js'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

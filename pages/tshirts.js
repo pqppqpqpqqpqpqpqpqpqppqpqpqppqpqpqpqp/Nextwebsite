@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import Product from '../models/Product'
+import Product from '../models/Product.js'
 import mongoose from 'mongoose'
 import Image from 'next/image'
 

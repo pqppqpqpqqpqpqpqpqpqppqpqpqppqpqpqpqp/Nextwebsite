@@ -1,7 +1,7 @@
 import { useState,useEffect } from 'react'
 import {useRouter} from 'next/router'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Footer from '../components/Footer.js'
+import Navbar from '../components/Navbar.js'
 import LoadingBar from 'react-top-loading-bar'
 import '../styles/globals.css'
 

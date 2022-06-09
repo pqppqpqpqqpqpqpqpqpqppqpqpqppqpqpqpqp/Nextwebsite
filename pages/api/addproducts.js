@@ -1,5 +1,5 @@
 
-import Product from '../../models/Product'
+import Product from '../../models/Product.js'
 import connectDb from '../../middleware/mongoose'
 
 const handler = async  (req, res)  => {
