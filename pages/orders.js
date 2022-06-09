@@ -12,7 +12,7 @@ const Orders = () => {
       }
     
      
-    }, [])
+    }, [router.query])
 
   return (
     <div>
