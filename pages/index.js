@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import Script from 'next/script'
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -72,7 +72,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         
       </Head>
-      <Script src='/sc.js' strategy="lazyOnload"></Script>
+     
    <div style={{ margin: "20px", cursor: 'pointer'}} className="carousel">
       <Slider
         autoplay = {true}

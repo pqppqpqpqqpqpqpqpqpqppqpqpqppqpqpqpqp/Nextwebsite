@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Script from 'next/script';
 
 import { FiShoppingBag } from 'react-icons/fi';
 import { AiFillCloseCircle, AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai';
@@ -84,7 +84,7 @@ const [dropdown, setDropdown] = useState(false)
      <div className='flex flex-col md:flex-row md:justify-start justify-center items-center py-2 shadow-md sticky top-0 bg-white z-10'>
     
     <div id="overlay" onClick={closeNav}></div>
-
+    <Script src='/sc.js'></Script>
 <div id="closeBtn" onClick={closeNav}>&times;</div>
 <div className="sidenav" id="mySidenav">
   <div className="sidenavHeader">
