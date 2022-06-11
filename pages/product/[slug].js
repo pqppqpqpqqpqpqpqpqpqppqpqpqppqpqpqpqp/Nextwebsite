@@ -58,7 +58,7 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
   
 
   const refreshVariant = (newsize, newcolor) => {
-    let url = `${process.env.NEXT_PUBLIC_HOST}/product/${variants[newcolor][newsize]['slug']}`
+    let url = `/product/${variants[newcolor][newsize]['slug']}`
 
     router.push(url)
   }
