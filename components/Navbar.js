@@ -82,7 +82,7 @@ const [dropdown, setDropdown] = useState(false)
   return (
     <>
      <div className='flex flex-col md:flex-row md:justify-start justify-center items-center py-2 shadow-md sticky top-0 bg-white z-10'>
-    
+   
     <div id="overlay" onClick={closeNav}></div>
     <Script src='/sc.js'></Script>
 <div id="closeBtn" onClick={closeNav}>&times;</div>
@@ -316,13 +316,16 @@ const [dropdown, setDropdown] = useState(false)
 
 
 <div className='cursor-pointer items-center cart fixed left-2 mx-2 top-2 flex'
+ 
   onClick={openNav}
+
   style={{ 
     fontSize: '30px',
     
     cursor: 'pointer',
    
   }}
+ 
  
   
 > &#9776;
@@ -341,10 +344,10 @@ const [dropdown, setDropdown] = useState(false)
           <Link href={'/hoodies'}><a><li> Hoodies </li></a></Link>
           <Link href={'/mugs'}><a><li> Mugs </li></a></Link>
           <Link href={'/stickers'}><a><li> Stickers </li></a></Link>
-          
+        
         </ul>
       </div>
-   
+
       <div className='cursor-pointer items-center cart absolute right-0 top-4  mx-5 flex'>
         <a onMouseOver={() => {setDropdown(true)}} onMouseLeave={() => {setDropdown(false)}}>
       {dropdown && <div onMouseOver={() => {setDropdown(true)}} onMouseLeave={() => {setDropdown(false)}} className='absolute right-8 bg-white shadow-lg border font-bold top-8 rounded-md px-5 py-4 w-36'>

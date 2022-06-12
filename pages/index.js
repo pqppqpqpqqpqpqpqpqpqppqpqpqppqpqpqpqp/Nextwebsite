@@ -88,7 +88,7 @@ export default function Home() {
         
         
           <div>
-            <Image className=''src='https://www.redwolf.in/image/cache/catalog/sliders/moon-knight-slider-1920-1920x450.jpg' alt=""  width={1920} height={450}/>
+            <Image className='md:w-full'src='https://www.redwolf.in/image/cache/catalog/sliders/moon-knight-slider-1920-1920x450.jpg' alt=""  width={1920} height={450}/>
           </div>
           <div>
             <Image className=''src='/Banner.png' alt="" width={1920} height={450} />

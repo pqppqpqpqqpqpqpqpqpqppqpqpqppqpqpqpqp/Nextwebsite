@@ -157,8 +157,8 @@
 .sidenav {
   max-width: 380px;
   width: 85%;
-  overflow-x: hidden;
   overflow-y: hidden;
+  overflow-x: hidden;
   height: 100%;
   position: fixed;
   z-index: 100;
@@ -461,12 +461,6 @@ a:active {
   transition: 500ms;
 }
 
-@media only screen and (max-width: 600px) {
-    img {
-        
-    
-    }
-}
 
 
 
@@ -478,7 +472,7 @@ a:active {
 
     display: block;
     box-sizing: border-box;
-
+    
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
