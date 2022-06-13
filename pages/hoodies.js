@@ -13,7 +13,17 @@ const Hoodies = ({products}) => {
 <section className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto">
     <div className="flex flex-wrap -m-4 justify-center">
-    {Object.keys(products).length === 0 && <p>Soory All The Hoodies Currently Out Of Stock.New Stock Coming Soon!</p>}
+    {Object.keys(products).length === 0 && <div className="flex justify-center">
+  <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+    <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2 capitalize"></h5>
+    <p className="text-gray-700 text-base mb-4">
+       !SORRY NO HODDIES ARE AVAILABALE RIGHT NOW ITS COMINGSOON
+    </p>
+    <Link href={'/'}><a>
+    <button type="button" className=" inline-block items-center text-center  px-10 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">continue shopping</button>
+   </a></Link>
+  </div>
+</div>}
      {Object.keys(products).map((item) => {
 
         return <Link passHref={true} key={products[item]._id} href={`/product/${products[item].slug}`}><div className="lg:w-1/5 md:w-1/2 p-4 w-full  cursor-pointer shadow-lg m-5 ">

@@ -110,34 +110,34 @@ export default function Home() {
         <Image src='/133.jpg' alt='' width={2500} height={900} />
       </div>
       <section className="section category">
-        <h2 className="title">Category Wish Shopping</h2>
+      <h2 className="title">Category Wish Shopping</h2>
         <div className="category-center container">
-
+      
           <div className="category-box">
             <Image src="https://www.redwolf.in/image/catalog/featured_categories/featured-category-t-shirts-2.jpg" alt='' width={900} height={900}/>
             <div className="content">
-              <h2>Shop for Man</h2>
-              <span>155 Products</span>
-              <a href=''>shop now</a>
+              <h2>Shop for <span className=' text-center bg-green-500 rounded-2xl'>Man</span></h2>
+              {/* <span>155 Products</span> */}
+              <button type="button" className=" inline-block items-center text-center  px-3 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">   <a href=''>shop now</a></button>
             </div>
           </div>
 
           <div className="category-box">
             <Image src="/KIDS.png" alt='' width={900} height={900}/>
             <div className="content">
-              <h2>Shop for kids</h2>
-              <span>155 Products</span>
-              <a href=''>shop now</a>
+              <h2>Shop for <span  className='text-center bg-green-500 rounded-2xl'>kids</span></h2>
+              {/* <span>155 Products</span> */}
+              <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a href=''>shop now</a></button>
             </div>
           </div>
 
           <div className="category-box">
             <Image src="/WOMAN.png" alt='' width={900} height={900}/>
             <div className="content">
-              <h2>Shop for Woman</h2>
-              <span>155 Products</span>
-              <Link href={'/woman'}>
-                <a>shop now</a>
+              <h2>Shop for <span  className=' text-center bg-green-500 rounded-2xl'> Woman </span> </h2>
+              {/* <span>155 Products</span> */}
+              <Link passHref={true} href={'/woman'}>
+              <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a>shop now</a></button>
               </Link>
             </div>
           </div>
@@ -146,10 +146,10 @@ export default function Home() {
           <div className="category-box">
             <Image src="/COUPLE.png" alt='' width={900} height={900}/>
             <div className="content">
-              <h2>Shop for Couple</h2>
-              <span>155 Products</span>
-              <Link href={'#'}>
-                <a>shop now</a>
+              <h2>Shop for <span  className=' text-center bg-green-500 rounded-2xl'>Couple</span> </h2>
+              {/* <span>155 Products</span> */}
+              <Link passHref={true} href={'#'}>
+              <button type="button" className=" inline-block  text-center  px-2 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize"> <a>shop now</a></button> 
               </Link>
 
             </div>
