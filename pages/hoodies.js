@@ -15,6 +15,7 @@ const Hoodies = ({products}) => {
     <div className="flex flex-wrap -m-4 justify-center">
     {Object.keys(products).length === 0 && <div className="flex justify-center">
   <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+  <img alt="ecommerce" className="w-52 h-52 m-auto" src="https://www.teestory.in/image/catalog/failure_icon.png" />
     <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2 capitalize"></h5>
     <p className="text-gray-700 text-base mb-4">
        !SORRY NO HODDIES ARE AVAILABALE RIGHT NOW ITS COMINGSOON
