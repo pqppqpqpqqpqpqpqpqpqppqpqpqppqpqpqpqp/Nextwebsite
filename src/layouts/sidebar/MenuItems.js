@@ -5,40 +5,40 @@ const Menuitems = [
     href: "/",
   },
   {
-    title: "Buttons",
-    icon: "disc",
-    href: "/buttons",
+    title: "Add Product",
+    icon: "plus-square",
+    href: "/admin/add",
   },
   {
-    title: "Forms",
-    icon: "layout",
-    href: "/forms",
+    title: "View Products",
+    icon: "eye",
+    href: "/admin/allproducts",
   },
   {
-    title: "Alerts",
-    icon: "info",
-    href: "/alerts",
+    title: "Image Uploader",
+    icon: "upload",
+    href: "/admin/imageup",
   },
   {
-    title: "Ratings",
-    icon: "star",
-    href: "/rating",
+    title: "Orders",
+    icon: "shopping-bag",
+    href: "/admin/allorders",
   },
-  {
-    title: "Images",
-    icon: "image",
-    href: "/image",
-  },
-  {
-    title: "Pagination",
-    icon: "user",
-    href: "/pagination",
-  },
-  {
-    title: "Tables",
-    icon: "grid",
-    href: "/table",
-  },
+  // {
+  //   title: "Images",
+  //   icon: "image",
+  //   href: "/image",
+  // },
+  // {
+  //   title: "Pagination",
+  //   icon: "user",
+  //   href: "/pagination",
+  // },
+  // {
+  //   title: "Tables",
+  //   icon: "grid",
+  //   href: "/table",
+  // },
 ];
 
 export default Menuitems;

@@ -119,7 +119,7 @@ useEffect(() => {
     <a href="#"><div className="sidenavContent">New Releases</div></a>
     <a href="#"><div className="sidenavContent">Movers and Shakers</div></a>
    
-  <a href={'/localstore'}><div className="sidenavContent">Try Your Near Localstore<span className='bg-red-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>TREND</span></div></a>
+  <a href={'/localstore'}><div  className="sidenavContent">Try Your Near Localstore<span className='bg-red-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>TREND</span></div></a>
   
     <hr />
     <div className="sidenavContentHeader">Digital Content And Devices</div>
