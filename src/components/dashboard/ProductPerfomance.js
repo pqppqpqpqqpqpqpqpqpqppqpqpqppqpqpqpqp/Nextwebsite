@@ -10,58 +10,88 @@ import {
   Chip,
 } from "@mui/material";
 import BaseCard from "../baseCard/BaseCard";
-import { useEffect } from "react";
 
+const products = [
+  {
+    id: "1",
+    name: "Sunil Joshi",
+    post: "Web Designer",
+    pname: "Elite Admin",
+    priority: "Low",
+    pbg: "primary.main",
+    budget: "3.9",
+  },
+  {
+    id: "2",
+    name: "Andrew McDownland",
+    post: "Project Manager",
+    pname: "Real Homes WP Theme",
+    priority: "Medium",
+    pbg: "secondary.main",
+    budget: "24.5",
+  },
+  {
+    id: "3",
+    name: "Christopher Jamil",
+    post: "Project Manager",
+    pname: "MedicalPro WP Theme",
+    priority: "High",
+    pbg: "error.main",
+    budget: "12.8",
+  },
+  {
+    id: "4",
+    name: "Nirav Joshi",
+    post: "Frontend Engineer",
+    pname: "Hosting Press HTML",
+    priority: "Critical",
+    pbg: "success.main",
+    budget: "2.4",
+  },
+];
 
-const AllProducts = ({products}) => {
-  useEffect(() => {
-     console.log(products)
-  
-   
-  }, [])
-  
+const ProductPerfomance = () => {
   return (
-    <BaseCard title="View Products">
+    <BaseCard title="Product Perfomance">
       <Table
         aria-label="simple table"
         sx={{
           mt: 3,
-          whiteSpace: "spaces",
+          whiteSpace: "nowrap",
         }}
       >
         <TableHead>
           <TableRow>
             <TableCell>
               <Typography color="textSecondary" variant="h6">
-                Title
+                Id
               </Typography>
             </TableCell>
             <TableCell>
               <Typography color="textSecondary" variant="h6">
-                Slug
+                Assigned
               </Typography>
             </TableCell>
             <TableCell>
               <Typography color="textSecondary" variant="h6">
-                Image
+                Name
               </Typography>
             </TableCell>
-        
             <TableCell>
               <Typography color="textSecondary" variant="h6">
-               Size/Color
+                Priority
               </Typography>
             </TableCell>
             <TableCell align="right">
               <Typography color="textSecondary" variant="h6">
-               Price
+                Budget
               </Typography>
             </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {products.map((product) => (
-            <TableRow key={product.slug}>
+            <TableRow key={product.name}>
               <TableCell>
                 <Typography
                   sx={{
@@ -69,7 +99,7 @@ const AllProducts = ({products}) => {
                     fontWeight: "500",
                   }}
                 >
-                  {product.title}
+                  {product.id}
                 </Typography>
               </TableCell>
               <TableCell>
@@ -86,7 +116,7 @@ const AllProducts = ({products}) => {
                         fontWeight: "600",
                       }}
                     >
-                      {product.slug}
+                      {product.name}
                     </Typography>
                     <Typography
                       color="textSecondary"
@@ -94,25 +124,18 @@ const AllProducts = ({products}) => {
                         fontSize: "13px",
                       }}
                     >
-                   
-                      
+                      {product.post}
                     </Typography>
                   </Box>
-                 
                 </Box>
               </TableCell>
               <TableCell>
-              <img style={{height:'70px', margin: '0 12px'}} src={product.img} alt=''></img>
-
-              </TableCell>
-              
-              <TableCell>
                 <Typography color="textSecondary" variant="h6">
-                  {product.size}/ {product.color}
+                  {product.pname}
                 </Typography>
               </TableCell>
               <TableCell>
-                {/* <Chip
+                <Chip
                   sx={{
                     pl: "4px",
                     pr: "4px",
@@ -121,10 +144,10 @@ const AllProducts = ({products}) => {
                   }}
                   size="small"
                   label={product.priority}
-                ></Chip> */}
+                ></Chip>
               </TableCell>
-              <TableCell align="left">
-                <Typography >₹{product.price}</Typography>
+              <TableCell align="right">
+                <Typography variant="h6">${product.budget}k</Typography>
               </TableCell>
             </TableRow>
           ))}
@@ -134,4 +157,4 @@ const AllProducts = ({products}) => {
   );
 };
 
-export default AllProducts;
+export default ProductPerfomance;

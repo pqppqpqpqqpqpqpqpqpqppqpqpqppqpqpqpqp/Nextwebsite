@@ -6,7 +6,7 @@ import DailyActivity from "../../src/components/dashboard/DailyActivity";
 import FullLayout from "../../src/layouts/FullLayout";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../../src/theme/theme";
-import  ProductPerfomance from "../../src/components/dashboard/AllProducts";
+import ProductPerfomance from "../../src/components/dashboard/ProductPerfomance";
 export default function Index() {
   return (
     <ThemeProvider theme={theme}>
