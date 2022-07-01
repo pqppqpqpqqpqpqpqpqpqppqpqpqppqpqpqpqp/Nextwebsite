@@ -71,7 +71,7 @@ useEffect(() => {
    
    let firstDropdownOpen = false;
 
-function firstDropDown() {
+const firstDropDown = () => {
     firstDropdownOpen = !firstDropdownOpen;
     if(firstDropdownOpen) {
         document.querySelector("#firstDropDown i").setAttribute("class", "fas fa-chevron-up");
@@ -124,7 +124,9 @@ function secondDropDown() {
 
 function openPrimeVideo() {
   document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Prime Video</div>
-  <a href="#"><div class="sidenavContent">All Videos</div></a>`;
+  <a href="#"><div class="sidenavContent">All Videos</div></a>
+  <a href="#"><div class="sidenavContent">All Videos</div></a>
+  <a href="#"><div class="sidenavContent">All Videos</div></a> `
 }
 
 if (typeof window !== "undefined") {
