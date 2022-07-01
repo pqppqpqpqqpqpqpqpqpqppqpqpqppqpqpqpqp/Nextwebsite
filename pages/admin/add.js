@@ -2,7 +2,9 @@ import React from 'react'
 import FullLayout from "../../src/layouts/FullLayout";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../../src/theme/theme";
-
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {
   Grid,
   Stack,
@@ -18,6 +20,41 @@ import {
 } from "@mui/material";
 import BaseCard from "../../src/components/baseCard/BaseCard";
 const Allproducts = () => {
+  const [form, setForm] = useState({})
+  const onChange = (e) =>{
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
+    })
+    
+  }
+  const submitform = async (e) =>{
+     e.preventDefault()
+     const data = {form}
+     let res = await fetch(`/api/addproducts`, {
+     
+      method: 'POST', // or 'PUT'
+      headers: {
+        'Content-Type': 'application/json',
+      },
+   
+      body: JSON.stringify(data),
+     
+    })
+   
+    let response = await res.json()
+    console.log(response)
+    
+    toast.success('Your account has been created', {
+      position: "top-left",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  }
     return (
         <ThemeProvider theme={theme}>
            <style jsx global>{`
@@ -31,93 +68,37 @@ const Allproducts = () => {
       <Grid item xs={12} lg={12}>
         <BaseCard title="Add Product">
           <Stack spacing={3}>
-            <TextField
-              id="name-basic"
-              label="Name"
+            <TextField onChange={onChange}
+             value={form.title? form.title:""} name="title"
+              label="Title"
               variant="outlined"
-              defaultValue="Nirav Joshi"
+              
             />
-            <TextField id="email-basic" label="Email" variant="outlined" />
-            <TextField
-              id="pass-basic"
-              label="Password"
-              type="password"
-              variant="outlined"
-            />
-            <TextField
-              id="outlined-multiline-static"
-              label="Text Area"
+            <TextField onChange={onChange} value={form.type? form.type:""} name="type" label="Type" variant="outlined" />
+            <TextField onChange={onChange} value={form.size? form.size:""} name="size" label="Size" variant="outlined" />
+            <TextField onChange={onChange} value={form.color? form.color:""} name="color" label="Color" variant="outlined" />
+            <TextField onChange={onChange} value={form.slug? form.slug:""} name="slug" label="Slug" variant="outlined" />
+        
+            <TextField onChange={onChange}
+              name="desc"
+              label="Description"
+              value={form.desc? form.desc:""}
               multiline
               rows={4}
-              defaultValue="Default Value"
+             
             />
-            <TextField
-              error
-              id="er-basic"
-              label="Error"
-              defaultValue="ad1avi"
-              variant="outlined"
-            />
-            <FormGroup>
-              <FormControlLabel
-                control={<Checkbox defaultChecked />}
-                label="Terms & Condition"
-              />
-              <FormControlLabel
-                disabled
-                control={<Checkbox />}
-                label="Disabled"
-              />
-            </FormGroup>
-            <FormControl>
-              <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
-              <RadioGroup
-                aria-labelledby="demo-radio-buttons-group-label"
-                defaultValue="female"
-                name="radio-buttons-group"
-              >
-                <FormControlLabel
-                  value="female"
-                  control={<Radio />}
-                  label="Female"
-                />
-                <FormControlLabel
-                  value="male"
-                  control={<Radio />}
-                  label="Male"
-                />
-                <FormControlLabel
-                  value="other"
-                  control={<Radio />}
-                  label="Other"
-                />
-              </RadioGroup>
-            </FormControl>
+        
+            
+        
           </Stack>
           <br />
-          <Button variant="contained" mt={2}>
+          <Button onClick={submitform} variant="outlined" mt={2}>
             Submit
           </Button>
         </BaseCard>
       </Grid>
 
-      <Grid item xs={12} lg={12}>
-        <BaseCard title="Form Design Type">
-          <Stack spacing={3} direction="row">
-            <TextField
-              id="outlined-basic"
-              label="Outlined"
-              variant="outlined"
-            />
-            <TextField id="filled-basic" label="Filled" variant="filled" />
-            <TextField
-              id="standard-basic"
-              label="Standard"
-              variant="standard"
-            />
-          </Stack>
-        </BaseCard>
-      </Grid>
+      
     </Grid>
  
         </FullLayout>
