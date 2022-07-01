@@ -5,6 +5,7 @@ import Script from 'next/script';
 
 import { FiShoppingBag } from 'react-icons/fi';
 import { AiFillCloseCircle, AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai';
+import { GoChevronRight } from 'react-icons/go';
 import { useRef,useEffect } from 'react';
 import { BsFillBagCheckFill } from 'react-icons/bs';
 import { MdAccountCircle } from 'react-icons/md'
@@ -168,52 +169,95 @@ if (typeof window !== "undefined") {
   <a href={'/localstore'}><div  className="sidenavContent">Try Your Near Localstore<span className='bg-red-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>TREND</span></div></a>
   
     <hr />
-    <div className="sidenavContentHeader">Digital Content And Devices</div>
+    <div className="sidenavContentHeader text-pink-700">MEN</div>
     <a href='#'
     ><div className="sidenavRow">
-        <div>Prime Video</div>
+     
+        <div>Printed T-Shirts</div>
         <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
       ></a>
     <a href="#" onClick={openPrimeVideo}
     ><div className="sidenavRow">
-        <div>Amazon Music</div>
+        <div>Full Sleeve</div>
         <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
-        <div>Apps for Android</div>
+        <div>Shirts</div>
         <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
-        <div>Echo, Alexa & Smart Home</div>
+        <div>Plain T-Shirts</div>
         <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
-        <div>Fire TV</div>
+        <div>Combos</div>
         <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
-        <div>Fire Tablets</div>
+        <div>Polo T-Shirts</div>
         <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
-        <div>Kindle E-readers & Books</div>
+        <div>Half Sleeve</div>
         <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
-        <div>Audible Audiobooks</div>
+        <div>Plus Size T-Shirts</div>
+        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      ></a>
+      <hr/>
+      <div className="sidenavContentHeader text-pink-700">WOMEN</div>
+    <a href='#'
+    ><div className="sidenavRow">
+        <div>Printed T-Shirts</div>
+        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      ></a>
+    <a href="#" onClick={openPrimeVideo}
+    ><div className="sidenavRow">
+        <div>Kurti</div>
+        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      ></a>
+    <a href="#"
+    ><div className="sidenavRow">
+        <div>Women Shirts</div>
+        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      ></a>
+    <a href="#"
+    ><div className="sidenavRow">
+        <div>Plain T-Shirts</div>
+        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      ></a>
+    <a href="#"
+    ><div className="sidenavRow">
+        <div>Combos</div>
+        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      ></a>
+    <a href="#"
+    ><div className="sidenavRow">
+        <div> Full Sleeve</div>
+        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      ></a>
+    <a href="#"
+    ><div className="sidenavRow">
+        <div>Half Sleeve</div>
+        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      ></a>
+    <a href="#"
+    ><div className="sidenavRow">
+        <div>Plus Size T-Shirts</div>
         <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
       ></a>
     <hr />
-    <div className="sidenavContentHeader">Shop By Department</div>
+    <div className="sidenavContentHeader text-pink-700">Shop By New</div>
     <a href="#"
     ><div className="sidenavRow">
-        <div>Amazon Fresh</div>
+        <div>HandMade Products<span className='bg-red-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>HOT</span></div>
         <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
       ></a>
     <a href="#">
