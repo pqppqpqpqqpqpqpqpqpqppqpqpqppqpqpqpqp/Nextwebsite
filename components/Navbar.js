@@ -17,6 +17,7 @@ const [sidebar, setSidebar] = useState(false)
 
 
 
+
 const router = useRouter()
 useEffect(() => {
   
@@ -39,7 +40,9 @@ useEffect(() => {
     // }
 
   }
+  
 
+  
   const ref = useRef()
 
    const openNav = () => {
@@ -165,9 +168,9 @@ if (typeof window !== "undefined") {
             <a href="#"><div className="sidenavContent">New Releases</div></a>
             <a href="#"><div className="sidenavContent">Movers and Shakers</div></a>
 
-           <Link href={'/localstore'}><a><div className="sidenavContent">Try Your Near Localstore<span className='bg-red-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>TREND</span></div>
-          
-            </a></Link>
+           <a href={'/localstore'}><div className="sidenavContent">Try Your Near Localstore<span className='bg-red-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>TREND</span></div>
+              
+            </a>
 
             <hr />
             <div className="sidenavContentHeader text-pink-700">MEN</div>
