@@ -5,7 +5,7 @@ import Script from 'next/script';
 
 import { FiShoppingBag } from 'react-icons/fi';
 import { AiFillCloseCircle, AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai';
-import { GoChevronRight } from 'react-icons/go';
+import { GoChevronRight, GoChevronLeft } from 'react-icons/go';
 import { useRef,useEffect } from 'react';
 import { BsFillBagCheckFill } from 'react-icons/bs';
 import { MdAccountCircle } from 'react-icons/md'
@@ -174,108 +174,108 @@ if (typeof window !== "undefined") {
     ><div className="sidenavRow">
      
         <div>Printed T-Shirts</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#" onClick={openPrimeVideo}
     ><div className="sidenavRow">
         <div>Full Sleeve</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Shirts</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Plain T-Shirts</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Combos</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Polo T-Shirts</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Half Sleeve</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Plus Size T-Shirts</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
       <hr/>
       <div className="sidenavContentHeader text-pink-700">WOMEN</div>
     <a href='#'
     ><div className="sidenavRow">
         <div>Printed T-Shirts</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#" onClick={openPrimeVideo}
     ><div className="sidenavRow">
         <div>Kurti</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Women Shirts</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Plain T-Shirts</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Combos</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div> Full Sleeve</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Half Sleeve</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#"
     ><div className="sidenavRow">
         <div>Plus Size T-Shirts</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <hr />
     <div className="sidenavContentHeader text-pink-700">Shop By New</div>
     <a href="#"
     ><div className="sidenavRow">
         <div>HandMade Products<span className='bg-red-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>HOT</span></div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i></div
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div
       ></a>
     <a href="#">
       <div className="sidenavRow">
         <div>Books</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
       </div>
     </a>
     <a href="#">
       <div className="sidenavRow">
         <div>Films, TV, Music & Games</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
       </div>
     </a>
     <a href="#">
       <div className="sidenavRow">
         <div>Electronics & Computers</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
       </div>
     </a>
     <div className="sidenavContainer" id="firstContainer">
@@ -283,49 +283,49 @@ if (typeof window !== "undefined") {
       <a href="#">
         <div className="sidenavRow">
           <div>Home, Garden, Pets & DIY</div>
-          <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
         </div>
       </a>
       <a href="#">
         <div className="sidenavRow">
           <div>Toys, Children & Baby</div>
-          <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
         </div>
       </a>
       <a href="#">
         <div className="sidenavRow">
           <div>Clothes, Shoes, Jewellery & Accessories</div>
-          <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
         </div>
       </a>
       <a href="#">
         <div className="sidenavRow">
           <div>Sports & Outdoors</div>
-          <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
         </div>
       </a>
       <a href="#">
         <div className="sidenavRow">
           <div>Food & Grocery</div>
-          <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
         </div>
       </a>
       <a href="#">
         <div className="sidenavRow">
           <div>Health & Beauty</div>
-          <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
         </div>
       </a>
       <a href="#">
         <div className="sidenavRow">
           <div>Car & Motorbike</div>
-          <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
         </div>
       </a>
       <a href="#">
         <div className="sidenavRow">
           <div>Business, Industry & Science</div>
-          <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
         </div>
       </a>
     </div>
@@ -346,25 +346,25 @@ if (typeof window !== "undefined") {
     <a href="#">
       <div className="sidenavRow">
         <div>Gift Cards & Top Up</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
       </div>
     </a>
     <a href="#">
       <div className="sidenavRow">
         <div>Find a Gift</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
       </div>
     </a>
     <a href="#">
       <div className="sidenavRow">
         <div>Handmade</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
       </div>
     </a>
     <a href="#">
       <div className="sidenavRow">
         <div>Amazon Launchpad</div>
-        <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+      < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
       </div>
     </a>
 
@@ -376,7 +376,7 @@ if (typeof window !== "undefined") {
       <a href="#">
         <div className="sidenavRow">
           <div>Home Services</div>
-          <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
         </div>
       </a>
       <a href="#">
@@ -385,7 +385,7 @@ if (typeof window !== "undefined") {
       <a href="#">
         <div className="sidenavRow">
           <div>Amazon Business</div>
-          <i className="fas fa-chevron-right" style={{ color: '#8e9090' }}></i>
+        < GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
         </div>
       </a>
       <a href="#">
@@ -415,7 +415,8 @@ if (typeof window !== "undefined") {
 
   <div id="sub-container">
     <div id="mainMenu">
-      <i className="fas fa-chevron-left" style={{ color: '#8e9090' }}></i> MAIN MENU
+    
+  <i className='m-auto ' style={{color: '8e9090'}}></i> MAIN MENU
     </div>
     <hr />
     <div id="sub-container-content">
