@@ -15,7 +15,7 @@ const Localstore = () => {
                     
                 </p>
                 
-                <div className="grid  grid-cols-1 gap-8 mt-8 xl:mt-16 md:gr/id-cols-2 xl:grid-cols-4">
+                <div className="grid  grid-cols-1 gap-8 mt-8 xl:mt-16  md:grid-cols-2 xl:grid-cols-4">
                     <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
                         <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://static.vecteezy.com/system/resources/previews/003/346/398/original/shopping-store-or-market-icon-free-vector.jpg" alt=""/>
                         

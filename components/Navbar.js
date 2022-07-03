@@ -128,9 +128,14 @@ function secondDropDown() {
 
 function openPrimeVideo() {
   document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Prime Video</div>
-  <a href="#"><div class="sidenavContent">All Videos</div></a>
-  <a href="#"><div class="sidenavContent">All Videos</div></a>
-  <a href="#"><div class="sidenavContent">All Videos</div></a> `
+  <a href="javascript:void(0)"><div class="sidenavContent">All Videos</div></a>
+   `
+}
+function Printed() {
+  document.getElementById("sub-container-content").innerHTML = `<div class="sidenavContentHeader">Prime Video</div>
+  <a href="javascript:void(0)"><div class="sidenavContent">All Videos</div></a>
+  <a href="javascript:void(0)"><div class="sidenavContent">All Videos</div></a>
+  <a href="javascript:void(0)"><div class="sidenavContent">All Videos</div></a> `
 }
 
 if (typeof window !== "undefined") {
@@ -160,50 +165,50 @@ if (typeof window !== "undefined") {
 
           <div id="main-container">
             <div className="sidenavContentHeader">Trending</div>
-            <a href="#">
+            <a href="javascript:void(0)">
               <div className="sidenavContent">Best  Seller
-                <small> New </small></div>
-
+              <span className='bg-green-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>NEW</span>
+               </div>
             </a>
-            <a href="#"><div className="sidenavContent">New Releases</div></a>
-            <a href="#"><div className="sidenavContent">Movers and Shakers</div></a>
+            <a href="javascript:void(0)"><div className="sidenavContent">New Releases</div></a>
+            <a href="javascript:void(0)"><div className="sidenavContent">Movers and Shakers</div></a>
 
-           <a href={'/localstore'}><div className="sidenavContent">Try Your Near Localstore<span className='bg-red-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>TREND</span></div>
+         <a href={ '/localstore'}><div className="sidenavContent">Try Your Near Localstore<span className='bg-red-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>TREND</span></div>
               
             </a>
-
+       
             <hr />
             <div className="sidenavContentHeader text-pink-700">MEN</div>
-            <a href='#'
+            <a href='javascript:void(0)' onClick={Printed}
             ><div className="sidenavRow">
 
                 <div>Printed T-Shirts</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#" onClick={openPrimeVideo}
+            <a href="javascript:void(0)" onClick={openPrimeVideo}
             ><div className="sidenavRow">
                 <div>Full Sleeve</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Shirts</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Plain T-Shirts</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Combos</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Polo T-Shirts</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Half Sleeve</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Plus Size T-Shirts</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
@@ -213,53 +218,53 @@ if (typeof window !== "undefined") {
             ><div className="sidenavRow">
                 <div>Printed T-Shirts</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#" onClick={openPrimeVideo}
+            <a href="javascript:void(0)" onClick={openPrimeVideo}
             ><div className="sidenavRow">
                 <div>Kurti</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Women Shirts</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Plain T-Shirts</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Combos</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div> Full Sleeve</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Half Sleeve</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>Plus Size T-Shirts</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
             <hr />
             <div className="sidenavContentHeader text-pink-700">Shop By New</div>
-            <a href="#"
+            <a href="javascript:void(0)"
             ><div className="sidenavRow">
                 <div>HandMade Products<span className='bg-red-600 rounded left-4 px-6 py-0 mx-3  pl-2 pr-2 text-purple-200  '>HOT</span></div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight></div></a>
-            <a href="#">
+            <a href="javascript:void(0)">
               <div className="sidenavRow">
                 <div>Books</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
               </div>
             </a>
-            <a href="#">
+            <a href="javascript:void(0)">
               <div className="sidenavRow">
                 <div>Films, TV, Music & Games</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
               </div>
             </a>
-            <a href="#">
+            <a href="javascript:void(0)">
               <div className="sidenavRow">
                 <div>Electronics & Computers</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
@@ -267,49 +272,49 @@ if (typeof window !== "undefined") {
             </a>
             <div className="sidenavContainer" id="firstContainer">
               <hr />
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavRow">
                   <div>Home, Garden, Pets & DIY</div>
                   <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
                 </div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavRow">
                   <div>Toys, Children & Baby</div>
                   <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
                 </div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavRow">
                   <div>Clothes, Shoes, Jewellery & Accessories</div>
                   <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
                 </div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavRow">
                   <div>Sports & Outdoors</div>
                   <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
                 </div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavRow">
                   <div>Food & Grocery</div>
                   <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
                 </div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavRow">
                   <div>Health & Beauty</div>
                   <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
                 </div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavRow">
                   <div>Car & Motorbike</div>
                   <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
                 </div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavRow">
                   <div>Business, Industry & Science</div>
                   <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
@@ -330,25 +335,25 @@ if (typeof window !== "undefined") {
             </div>
             <hr />
             <div className="sidenavContentHeader">Programs & Features</div>
-            <a href="#">
+            <a href="javascript:void(0)">
               <div className="sidenavRow">
                 <div>Gift Cards & Top Up</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
               </div>
             </a>
-            <a href="#">
+            <a href="javascript:void(0)">
               <div className="sidenavRow">
                 <div>Find a Gift</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
               </div>
             </a>
-            <a href="#">
+            <a href="javascript:void(0)">
               <div className="sidenavRow">
                 <div>Handmade</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
               </div>
             </a>
-            <a href="#">
+            <a href="javascript:void(0)">
               <div className="sidenavRow">
                 <div>Amazon Launchpad</div>
                 <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
@@ -357,25 +362,25 @@ if (typeof window !== "undefined") {
 
             <div className="sidenavContainer" id="secondContainer">
               <hr />
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavContent">Made In Italy</div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavRow">
                   <div>Home Services</div>
                   <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
                 </div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavContent">Prime Wardrobe</div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavRow">
                   <div>Amazon Business</div>
                   <GoChevronRight className='m-auto mr-1 text-2xl'></GoChevronRight>
                 </div>
               </a>
-              <a href="#">
+              <a href="javascript:void(0)">
                 <div className="sidenavContent">Amazon Second Chance</div>
               </a>
             </div>
@@ -393,10 +398,10 @@ if (typeof window !== "undefined") {
             </div>
             <hr />
             <div className="sidenavContentHeader">Help & Settings</div>
-            <a href="#"><div className="sidenavContent">Your Account</div></a>
-            <a href="#"><div className="sidenavContent">Currency Settings</div></a>
-            <a href="#"><div className="sidenavContent">Customer Service</div></a>
-            <a href="#"><div className="sidenavContent">Sign In</div></a>
+            <a href="javascript:void(0)"><div className="sidenavContent">Your Account</div></a>
+            <a href="javascript:void(0)"><div className="sidenavContent">Currency Settings</div></a>
+            <a href="javascript:void(0)"><div className="sidenavContent">Customer Service</div></a>
+            <a href="javascript:void(0)"><div className="sidenavContent">Sign In</div></a>
             <div style={{ height: '50px' }}></div>
           </div>
 
@@ -408,7 +413,7 @@ if (typeof window !== "undefined") {
             <hr />
             <div id="sub-container-content">
               <div className="sidenavContentHeader">Prime Video</div>
-              <a href="#"><div className="sidenavContent">All Videos</div></a>
+              <a href="javascript:void(0)"><div className="sidenavContent">All Videos</div></a>
             </div>
           </div>
         </div>
