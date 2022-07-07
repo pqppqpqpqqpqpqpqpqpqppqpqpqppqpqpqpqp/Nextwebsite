@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 const Localstore = () => {
   return (
+   
     <div className='text-xm text-center font-bold '>
-
-
+    
 
       <section className="bg-white ">
       <h1 className='bg-white-600 text-pink-300 text-2xl mx-15 mt-14 bg-slate-400'>LOCAL STORE</h1>
@@ -15,8 +15,8 @@ const Localstore = () => {
                     
                 </p>
                 
-                <div className="grid  grid-cols-1 gap-8 mt-8 xl:mt-16  md:grid-cols-2 xl:grid-cols-4">
-                    <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
+                <div className="grid  grid-cols-2 gap-8 mt-8 xl:mt-16  md:grid-cols-2 xl:grid-cols-4">
+                    <div className="flex flex-col items-center p-1 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
                         <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://static.vecteezy.com/system/resources/previews/003/346/398/original/shopping-store-or-market-icon-free-vector.jpg" alt=""/>
                         
                         <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize  ">Store 1 </h1>
@@ -55,7 +55,7 @@ const Localstore = () => {
                          <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-400 text-red-600 font-medium text-xm leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a>VIEW STORE</a></button>
                     </div>
 
-                    <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
+                    <div className="flex flex-col items-center p-1 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
                         <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://static.vecteezy.com/system/resources/previews/003/346/398/original/shopping-store-or-market-icon-free-vector.jpg" alt=""/>
                         
                         <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize  ">Store 2 </h1>
@@ -94,7 +94,7 @@ const Localstore = () => {
                          <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-400 text-red-600 font-medium text-xm leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a>VIEW STORE</a></button>
                     </div>
 
-                    <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
+                    <div className="flex flex-col items-center p-1 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
                         <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://static.vecteezy.com/system/resources/previews/003/346/398/original/shopping-store-or-market-icon-free-vector.jpg" alt=""/>
                         
                         <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize  ">Store 3</h1>
@@ -133,7 +133,7 @@ const Localstore = () => {
                          <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-400 text-red-600 font-medium text-xm leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a>VIEW STORE</a></button>
                     </div>
 
-                    <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
+                    <div className="flex flex-col items-center p-1 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
                         <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://static.vecteezy.com/system/resources/previews/003/346/398/original/shopping-store-or-market-icon-free-vector.jpg" alt=""/>
                         
                         <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize  ">Store 4  </h1>                     
@@ -171,7 +171,7 @@ const Localstore = () => {
                      <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-400 text-red-600 font-medium text-xm leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a>VIEW STORE</a></button>
                     </div>
 
-                    <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
+                    <div className="flex flex-col items-center p-1 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
                         <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://static.vecteezy.com/system/resources/previews/003/346/398/original/shopping-store-or-market-icon-free-vector.jpg" alt=""/>
                         
                         <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize  ">Store 5  </h1>                 
@@ -209,7 +209,7 @@ const Localstore = () => {
                          <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-400 text-red-600 font-medium text-xm leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a>VIEW STORE</a></button>
                     </div>
 
-                    <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
+                    <div className="flex flex-col items-center p-1 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
                         <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://static.vecteezy.com/system/resources/previews/003/346/398/original/shopping-store-or-market-icon-free-vector.jpg" alt=""/>
                         
                         <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize  ">Store 6 </h1>
@@ -248,7 +248,7 @@ const Localstore = () => {
                          <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-400 text-red-600 font-medium text-xm leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a>VIEW STORE</a></button>
                     </div>
 
-                    <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
+                    <div className="flex flex-col items-center p-1 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
                         <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://static.vecteezy.com/system/resources/previews/003/346/398/original/shopping-store-or-market-icon-free-vector.jpg" alt=""/>
                         
                         <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize  ">Store 7  </h1>
@@ -287,7 +287,7 @@ const Localstore = () => {
                          <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-400 text-red-600 font-medium text-xm leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a>VIEW STORE</a></button>
                     </div>
 
-                    <div className="flex flex-col items-center p-8 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
+                    <div className="flex flex-col items-center p-1 transition-colors duration-200 transform cursor-pointer group hover:bg-slate-300 rounded-xl">
                         <img className="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="https://static.vecteezy.com/system/resources/previews/003/346/398/original/shopping-store-or-market-icon-free-vector.jpg" alt=""/>
                         
                         <h1 className="mt-4 text-2xl font-semibold text-gray-700 capitalize  ">Store 8 </h1>                      

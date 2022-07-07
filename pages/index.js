@@ -73,7 +73,7 @@ export default function Home() {
         
       </Head>
      
-   <div style={{ margin: "0px", cursor: 'pointer', objectFit: 'cover'}} className="carousel ">
+   <div style={{ margin: "0px", cursor: 'pointer', objectFit: 'cover' }} className="carousel ">
       <Slider
         autoplay = {true}
         autoplaySpeed={5000}
@@ -83,7 +83,7 @@ export default function Home() {
         prevArrow={<PreviousBtn />}
         nextArrow={<NextBtn />}
        
-        dotsClass="slick-dots custom-indicator"
+       
       >
         
       
@@ -116,7 +116,7 @@ export default function Home() {
           <div className="category-box">
             <Image src="https://www.redwolf.in/image/catalog/featured_categories/featured-category-t-shirts-2.jpg" alt='' width={900} height={900}/>
             <div className="content">
-              <h2>Shop for <span className=' text-center bg-slate-200 rounded-2xl'>Man</span></h2>
+              <h2  className=' text-center'>Shop for <span className=' text-center bg-slate-200 rounded-2xl'>Man</span></h2>
               {/* <span>155 Products</span> */}
               <button type="button" className=" inline-block items-center text-center  px-3 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">   <a href=''>shop now</a></button>
             </div>
@@ -125,7 +125,7 @@ export default function Home() {
           <div className="category-box">
             <Image src="/KIDS.png" alt='' width={900} height={900}/>
             <div className="content">
-              <h2>Shop for <span  className='text-center bg-slate-200 rounded-2xl'>kids</span></h2>
+              <h2  className=' text-center'>Shop for <span  className='text-center bg-slate-200 rounded-2xl'>kids</span></h2>
               {/* <span>155 Products</span> */}
               <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a href=''>shop now</a></button>
             </div>
@@ -134,7 +134,7 @@ export default function Home() {
           <div className="category-box">
             <Image src="/WOMAN.png" alt='' width={900} height={900}/>
             <div className="content">
-              <h2>Shop for <span  className=' text-center  bg-slate-200 rounded-2xl'> Woman </span> </h2>
+              <h2  className=' text-center'>Shop for <span  className=' text-center  bg-slate-200 rounded-2xl'> Woman </span> </h2>
               {/* <span>155 Products</span> */}
               <Link passHref={true} href={'/woman'}>
               <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a>shop now</a></button>
@@ -146,7 +146,7 @@ export default function Home() {
           <div className="category-box">
             <Image src="/COUPLE.png" alt='' width={900} height={900}/>
             <div className="content">
-              <h2>Shop for <span  className=' text-center bg-slate-200 rounded-2xl'>Couple</span> </h2>
+              <h2 className=' text-center'>Shop for <span  className=' text-center bg-slate-200 rounded-2xl'>Couple</span> </h2>
               {/* <span>155 Products</span> */}
               <Link passHref={true} href={'#'}>
               <button type="button" className=" inline-block  text-center  px-2 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize"> <a>shop now</a></button> 

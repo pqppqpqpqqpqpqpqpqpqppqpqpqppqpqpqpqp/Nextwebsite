@@ -100,7 +100,7 @@
   
   @media only screen and (max-width: 1200px) {
     .category-box .content h2 {
-      font-size: 2.4rem;
+      font-size: 1.4rem;
     }
   
     .category-box .content span {
@@ -590,9 +590,6 @@ a:active {
 .slick-arrow.slick-hidden {
     display: none;
 }
-
-
-
 
 
 
