@@ -32,13 +32,13 @@ const Mugs = ({products}) => {
           <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">Mugs</h3>
           <h2 className="text-gray-900 title-font text-lg font-medium">{products[item].title}</h2>
           <p className="mt-1">₹{products[item].price}</p>
-          <div className="mt-1">
+          {/* <div className="mt-1">
            {products[item].size.includes('S') && <span className='border border-gray-300 px-1 mx-1'>S</span>}
            {products[item].size.includes('M') && <span className='border border-gray-300 px-1 mx-1'>M</span>} 
            {products[item].size.includes('L') && <span className='border border-gray-300 px-1 mx-1'>L</span> } 
            {products[item].size.includes('XL') && <span className='border border-gray-300 px-1 mx-1'>XL</span>} 
            {products[item].size.includes('XXL') && <span className='border border-gray-300 px-1 mx-1'>XXL</span>}
-            </div>
+            </div> */}
             <div className="mt-1">
             {products[item].color.includes('red') &&  <button className= "border-2  ml-1 bg-red-700 border-gray-600 rounded-full w-6 h-6 focus:outline-none "></button>}
             {products[item].color.includes('blue') &&  <button className= "border-2  ml-1 bg-blue-700 border-gray-600 rounded-full w-6 h-6 focus:outline-none "></button>}
