@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Post = ({ buyNow, addToCart, product, variants }) => {
-
+  
   const router = useRouter()
   const { slug } = router.query
   const [pin, setPin] = useState()
@@ -83,13 +83,13 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
         <div className="lg:w-4/5 mx-auto flex flex-wrap">
           <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-auto px-25 mt-10 object-cover object-top rounded" src={product.img} />
           <div className="lg:w-1/2 w-full  lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-            <h2 className="text-sm title-font text-gray-500 tracking-widest capitalize">premium addidus tshirt</h2>
+           
             <h1 className="text-gray-900 text-3xl title-font font-medium mb-1 capitalize">{product.title}({product.size}/{product.color})</h1>
             <div className="flex mb-4">
 
 
 
-              {/* <span className="flex items-center">
+                {/*  <span className="flex items-center">
                   <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 text-pink-500" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
                   </svg>
@@ -141,9 +141,9 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
                 {Object.keys(variants).includes('yellow') && Object.keys(variants['yellow']).includes(size) && <button onClick={() => { refreshVariant(size, 'yellow') }} className={`border-2  ml-1 bg-yellow-500   rounded-full w-6 h-6 focus:outline-none ${color === 'yellow' ? 'border-black' : 'border-gray-700'} `}></button>}
                 {Object.keys(variants).includes('black') && Object.keys(variants['black']).includes(size) && <button onClick={() => { refreshVariant(size, 'black') }} className={`border-2  ml-1 bg-gray-900   rounded-full w-6 h-6 focus:outline-none ${color === 'black' ? 'border-black' : 'border-gray-700'} `}></button>}
               </div>
-              <div className="flex ml-6 items-center">
+           <div className="flex ml-6 items-center">
                 <span className="mr-3 capitalize">size</span>
-                <div className="relative">
+                 <div className="relative">
                   <select value={size} onChange={(e) => { refreshVariant(e.target.value, color) }} className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-pink-200 focus:border-pink-500 text-base pl-3 pr-10">
                     {Object.keys(variants[color]).includes('S') && <option value={'S'}>S</option>}
                     {Object.keys(variants[color]).includes('M') && <option value={'M'}>M</option>}
@@ -158,7 +158,8 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
                     </svg>
                   </span>
                 </div>
-              </div>
+              </div> 
+              
             </div>
             <div className="flex ">
               <span className="title-font font-medium text-2xl text-gray-900">₹{product.price}</span>
@@ -181,10 +182,13 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
               Yesssss this pincode is active
             </div>}
           </div>
+   
         </div>
+     
       </div>
+     
     </section>
-
+    
   </>
 }
 
