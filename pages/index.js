@@ -88,18 +88,18 @@ export default function Home() {
         
       
           <div >
-            <Image className='md:w-full'src='https://www.redwolf.in/image/cache/catalog/sliders/moon-knight-slider-1920-1920x450.jpg' alt=""  width={1920} height={450}/>
+            <Image className='md:w-full'src='https://www.redwolf.in/image/cache/catalog/sliders/moon-knight-slider-1920-1920x450.jpg' alt=""  width={1500} height={500}/>
           </div>
           <div>
-            <Image className=''src='/Banner.png' alt="" width={1920} height={450} />
-          </div>
-          
-          <div>
-          <Image className=''src='https://www.redwolf.in/image/cache/catalog/sliders/moon-knight-slider-1920-1920x450.jpg' alt="" width={1920} height={450} />
+            <Image className=''src='/Banner.png' alt="" width={1500} height={500} />
           </div>
           
           <div>
-            <Image className=''src='https://www.redwolf.in/image/cache/catalog/sliders/moon-knight-slider-1920-1920x450.jpg' alt="" width={1920} height={450} />
+          <Image className=''src='https://www.redwolf.in/image/cache/catalog/sliders/moon-knight-slider-1920-1920x450.jpg' alt="" width={1500} height={500} />
+          </div>
+          
+          <div>
+            <Image className=''src='https://www.redwolf.in/image/cache/catalog/sliders/moon-knight-slider-1920-1920x450.jpg' alt="" width={1500} height={500} />
           </div>
      
           
@@ -127,7 +127,9 @@ export default function Home() {
             <div className="content">
               <h2  className=' text-center'>Shop for <span  className='text-center bg-slate-200 rounded-2xl'>kids</span></h2>
               {/* <span>155 Products</span> */}
+              <Link passHref={true} href={'/kids'}>
               <button type="button" className=" inline-block items-center text-center  px-2 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out capitalize">  <a href=''>shop now</a></button>
+                </Link>
             </div>
           </div>
 
@@ -167,7 +169,7 @@ export default function Home() {
             <Image src='/SUPERHERO.jpg' alt=""  width={2200} height={900}/>
           </div>
           <div>
-            <Image src='https://www.redwolf.in/image/catalog/featured_brands/disney-logo-3.png' alt="" width={2200} height={900}/>
+            <Image src='https://www.redwolf.in/image/catalog/featured_brands/spider-man-merchandise-india2.png' alt="" width={2200} height={900}/>
           </div>
           
           <div>

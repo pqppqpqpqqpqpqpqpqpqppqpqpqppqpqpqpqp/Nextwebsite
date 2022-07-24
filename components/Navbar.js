@@ -479,6 +479,7 @@ if (typeof window !== "undefined") {
               return <li key={k}>
                 <div className='item flex my-5'>
                   <div className='w-2/3  font-semibold'>{cart[k].name}({cart[k].size}/{cart[k].variant})</div>
+                  
                   <div className='flex font-semibold items-center justify-center w-1/3 text-lg '><AiFillPlusCircle onClick={() => { addToCart(k, 1, cart[k].price, cart[k].name, cart[k].size, cart[k].variant); } } className='cursor-pointer text-pink-600' /><span className='mx-2'>{cart[k].qty}</span><AiFillMinusCircle onClick={() => { removeFromCart(k, 1, cart[k].price, cart[k].name, cart[k].size, cart[k].variant); } } className='cursor-pointer text-pink-600' /></div>
                 </div>
               </li>;
@@ -503,6 +504,7 @@ if (typeof window !== "undefined") {
       </div>
   )
 }
+
 
 
 export default Navbar

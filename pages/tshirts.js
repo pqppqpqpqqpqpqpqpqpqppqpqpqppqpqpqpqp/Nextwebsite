@@ -14,9 +14,9 @@ const Tshirts = ({ products }) => {
 
       
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-24 mx-auto ">
        
-          <div className="flex flex-wrap -m-4 justify-center">
+          <div className="flex flex-wrap -m-4 justify-center ">
          
             {Object.keys(products).map((item) => {
 

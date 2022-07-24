@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { MdMyLocation } from 'react-icons/md'
 const Localstore = () => {
   return (
@@ -8,7 +9,10 @@ const Localstore = () => {
      
 
       <section className="bg-white ">
-      <h1 className='bg-white-600 text-pink-300 text-2xl mx-15 mt-14 bg-slate-400'>LOCAL STORE</h1>
+      <div className='mt-auto'>
+        <Image className='rounded-2xl 'src='/local store.png' alt='' width={1500} height={500} />
+      </div>
+      <h1 className='bg-white-600 text-pink-300 text-2xl mx-15 mt-5 bg-slate-400'>LOCAL STORE</h1>
     
            
             <div className="container px-6 py-10 mx-auto">

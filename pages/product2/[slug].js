@@ -2,7 +2,7 @@
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import mongoose from 'mongoose'
-import Product from '../../models/Product.js'
+import Product from '../../models/Product'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -58,7 +58,8 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
   
 
   const refreshVariant = (newsize, newcolor) => {
-    let url = `/product1/${variants[newcolor][newsize]['slug']}`
+    let url = `/product2/${variants[newcolor][newsize]['slug']}`
+
     router.push(url)
   }
 
@@ -130,7 +131,7 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
             </div>
             <p className="leading-relaxed">{product.desc}</p>
             <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
-              <div className="flex">
+             <div className="flex">
                 <span className="mr-3">Color</span>
                 {Object.keys(variants).includes('white') && Object.keys(variants['white']).includes(size) && <button onClick={() => { refreshVariant(size, 'white') }} className={`border-2  rounded-full w-6 h-6 focus:outline-none ${color === 'white' ? 'border-black' : 'border-gray-700'} `}></button>}
                 {Object.keys(variants).includes('red') && Object.keys(variants['red']).includes(size) && <button onClick={() => { refreshVariant(size, 'red') }} className={`border-2  ml-1 bg-red-700  rounded-full w-6 h-6 focus:outline-none ${color === 'red' ? 'border-black' : 'border-gray-700'} `}></button>}
@@ -140,7 +141,27 @@ const Post = ({ buyNow, addToCart, product, variants }) => {
                 {Object.keys(variants).includes('yellow') && Object.keys(variants['yellow']).includes(size) && <button onClick={() => { refreshVariant(size, 'yellow') }} className={`border-2  ml-1 bg-yellow-500   rounded-full w-6 h-6 focus:outline-none ${color === 'yellow' ? 'border-black' : 'border-gray-700'} `}></button>}
                 {Object.keys(variants).includes('black') && Object.keys(variants['black']).includes(size) && <button onClick={() => { refreshVariant(size, 'black') }} className={`border-2  ml-1 bg-gray-900   rounded-full w-6 h-6 focus:outline-none ${color === 'black' ? 'border-black' : 'border-gray-700'} `}></button>}
               </div>
-           
+           <div className="flex ml-6 items-center">
+                <span className="mr-3 capitalize">Select Age</span>
+                 <div className="relative">
+                  <select value={size} onChange={(e) => { refreshVariant(e.target.value, color) }} className="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-pink-200 focus:border-pink-500 text-base pl-3 pr-10">
+                    {Object.keys(variants[color]).includes('4-5Y') && <option value={'4-5Y'}>4-5Y</option>}
+                    {Object.keys(variants[color]).includes('5-6Y') && <option value={'5-6Y'}>5-6Y</option>}
+                    {Object.keys(variants[color]).includes('6-7Y') && <option value={'6-7Y'}>6-7Y</option>}
+                    {Object.keys(variants[color]).includes('8-10Y') && <option value={'8-10Y'}>8-10Y</option>}
+                    {Object.keys(variants[color]).includes('10-12Y') && <option value={'10-12Y'}>10-12Y</option>}
+                    {Object.keys(variants[color]).includes('12-13Y') && <option value={'12-13Y'}>12-13Y</option>}
+
+                  </select>
+                  <span className="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4" viewBox="0 0 24 24">
+                      <path d="M6 9l6 6 6-6"></path>
+                    </svg>
+                  </span>
+                </div>
+              </div> 
+             
+             
             </div>
             <div className="flex ">
               <span className="title-font font-medium text-2xl text-gray-900">₹{product.price}</span>
